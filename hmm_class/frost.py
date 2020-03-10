@@ -2,6 +2,11 @@
 # https://udemy.com/unsupervised-machine-learning-hidden-markov-models-in-python
 # http://lazyprogrammer.me
 # Model and generate Robert Frost poems.
+
+# Anpassung Frost.py -> poem
+
+
+
 from __future__ import print_function, division
 from future.utils import iteritems
 from builtins import range
