@@ -2,6 +2,9 @@
 # https://udemy.com/unsupervised-machine-learning-hidden-markov-models-in-python
 # http://lazyprogrammer.me
 # Discrete Hidden Markov Model (HMM)
+
+# Kapitel 28
+
 from __future__ import print_function, division
 from builtins import range
 # Note: you may need to update your version of future
@@ -65,7 +68,7 @@ class HMM:
                 alphas.append(alpha)
 
                 beta = np.zeros((T, self.M))
-                beta[-1] = 1
+                beta[-1] = 1 # letzte Zeile kriegt Wert (Pos 29 ) = [1,1]
                 for t in range(T - 2, -1, -1):
                     beta[t] = self.A.dot(self.B[:, x[t+1]] * beta[t+1])
                 betas.append(beta)

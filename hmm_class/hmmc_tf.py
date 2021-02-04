@@ -2,6 +2,8 @@
 # https://udemy.com/unsupervised-machine-learning-hidden-markov-models-in-python
 # http://lazyprogrammer.me
 # Continuous-observation HMM in Theano using gradient descent.
+
+
 # TODO: seems to be broken on TF v1.2, but fine with TF v1.0
 from __future__ import print_function, division
 from builtins import range
